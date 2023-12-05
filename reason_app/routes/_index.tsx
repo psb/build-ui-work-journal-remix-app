@@ -1,5 +1,5 @@
-import EntryForm from "@app/components/entry-form";
-import { getSession } from "@app/session";
+import EntryForm from "reason_app/components/entry-form";
+import { getSession } from "reason_app/session";
 import { PrismaClient } from "@prisma/client";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { type MetaFunction } from "@remix-run/node";

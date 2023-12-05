@@ -1,4 +1,4 @@
-import { commitSession, getSession } from "@app/session";
+import { commitSession, getSession } from "reason_app/session";
 import {
   ActionFunctionArgs,
   LoaderFunctionArgs,

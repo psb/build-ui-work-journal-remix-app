@@ -1,0 +1,9 @@
+(library
+ (name app)
+ (modes melange)
+ (libraries reason-react components routes bindings)
+ (melange.runtime_deps
+  tailwind.css
+  (glob_files *.tsx))
+ (preprocess
+  (pps reason-react-ppx melange.ppx)))
