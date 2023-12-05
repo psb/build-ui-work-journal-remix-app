@@ -3,9 +3,8 @@ import { getSession } from "@app/session";
 import { PrismaClient } from "@prisma/client";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { type MetaFunction } from "@remix-run/node";
-import { Link, useFetcher, useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import { format, parseISO, startOfWeek } from "date-fns";
-import { useRef } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -113,7 +112,7 @@ export default function Index() {
                 lg:pt-[3px]
                 lg:text-sm"
             >
-              {format(parseISO(week.dateString), "MMMM d, yyyy")}
+              Week of {format(parseISO(week.dateString), "MMMM d, yyyy")}
             </p>
 
             <div className="mt-6 space-y-8 lg:space-y-12">
